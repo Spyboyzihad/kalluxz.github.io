@@ -36,7 +36,7 @@ body {
   }
 li, a, input{
     font-family: monospace;
-    font-weight: 500;
+    font-weight: 100Px;
     font-size: 15px;
     color: #e0aaff;
     text-decoration: none;
@@ -53,7 +53,7 @@ header{
 }
 .project_link li {
     display:  inline-block;
-    margin: 0px 25px;
+    margin: 0px 5pxpx;
 }
 .project_link li a {
     transition: all 0.2s ease 0s;
@@ -86,4 +86,21 @@ a {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
+}
+.checkbox {
+  font-size: 25px;
+  color: #5a189a;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media(max-width:927){
+  .checkbox {
+    display: none;
+  }
 }
