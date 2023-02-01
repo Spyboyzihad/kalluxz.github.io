@@ -1,8 +1,9 @@
-body{
-    background-color: #1d0035;
+body {
+    background-color: #10002b;
+    font-family: monospace;
 }
-.wrapper {
-    height: 70vh;
+.animated_text {
+    height: 60vh;
     /*This part is important for centering*/
     display: grid;
     place-items: center;
@@ -10,7 +11,7 @@ body{
   
   .typing-demo {
     width: 28ch;
-    color: aliceblue;
+    color: #e0aaff;
     animation: typing 5s steps(28), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -30,27 +31,59 @@ body{
       border-color: transparent
     }
   }
-.section-1 {
-    display: inline-block;
-    color: aliceblue;
-    border-width: 10ch;
-    text-align: center;
-    border: 2px solid #ffffff3f;
-    border-radius: 20px;
-    white-space: nowrap;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-family: Comic Sans MS;
-    margin-right: 10px;
-    margin-bottom: 30px;
+.logo {
+    width: 100px;
   }
-.div-class {
-    text-align: center;
+li, a, input{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 15px;
+    color: #e0aaff;
+    text-decoration: none;
 }
-.heading-full {
+header{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+.project_link {
+    list-style: none;
+    
+}
+.project_link li {
+    display:  inline-block;
+    margin: 0px 25px;
+}
+.project_link li a {
+    transition: all 0.2s ease 0s;
+}
+.project_link li a:hover {
+    color: #7b26bf;
+}
+input {
+    padding: 4px 14px;
+    background-color: #5a189a;
+    color: #10002b;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+input:hover {
+    background-color: #e0aaff;
+}
+footer {
+  color: #e0aaff;
+  text-align: center;
+
+  font-family: monospace;
+}
+.fa-brands {
+  font-size: 20px;
+}
+a {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
