@@ -87,7 +87,7 @@ a {
   margin-left: 10px;
   margin-right: 10px;
 }
-.checkbox {
+.check_box {
   font-size: 25px;
   color: #5a189a;
   float: right;
@@ -99,8 +99,40 @@ a {
 #check {
   display: none;
 }
-@media(max-width:927){
-  .checkbox {
+@media screen and (max-width: 950px) {
+  .check_box {
+    display: block;
+  }
+  .nav_some {
     display: none;
+  }
+  .project_link {
+    /* display: none; */
+    width: 100%;
+    height:  100vh;
+    background-color: #10002b;
+    position: fixed;
+    top: 80;
+    left: -100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* transform: translateX(100%); */
+    /* transition: all 0.5s linear; */
+    /* visibility: hidden; */
+    /* pointer-events: none; */
+    /* opacity: 0; */
+  }
+  body {
+    overflow-x: hidden;
+  }
+  li {
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+  }
+  #check:checked ~ * .project_link{
+    left: 0;
   }
 }
