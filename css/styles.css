@@ -33,6 +33,7 @@ body {
   }
 .logo {
     width: 100px;
+    color: #e0aaff;
   }
 li, a, input{
     font-family: monospace;
@@ -63,7 +64,7 @@ header{
 }
 input {
     padding: 4px 14px;
-    background-color: #5a189a;
+    background-color: #e0aaff;
     color: #10002b;
     border: none;
     border-radius: 25px;
@@ -71,7 +72,7 @@ input {
     cursor: pointer;
 }
 input:hover {
-    background-color: #e0aaff;
+    background-color: #7b26bf;
 }
 footer {
   color: #e0aaff;
@@ -89,7 +90,7 @@ a {
 }
 .check_box {
   font-size: 25px;
-  color: #5a189a;
+  color: #e0aaff;
   float: right;
   line-height: 80px;
   margin-right: 40px;

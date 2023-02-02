@@ -1,0 +1,85 @@
+body {
+    background-color: #10002b;
+    font-family: monospace;
+}
+.animated_text {
+    height: 60vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 28ch;
+    color: #e0aaff;
+    animation: typing 5s steps(28), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.logo {
+    width: 100px;
+  }
+li, a, input{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 15px;
+    color: #e0aaff;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+.project_link {
+    list-style: none;
+    
+}
+.project_link li {
+    display:  inline-block;
+    margin: 0px 25px;
+}
+.project_link li a {
+    transition: all 0.2s ease 0s;
+}
+.project_link li a:hover {
+    color: #7b26bf;
+}
+input {
+    padding: 4px 14px;
+    background-color: #5a189a;
+    color: #10002b;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+input:hover {
+    background-color: #e0aaff;
+}
+footer {
+  color: #e0aaff;
+  text-align: center;
+  background-color: #5a189a;
+  font-family: monospace;
+}
+.footer_div {
+  display: inline-block;
+  background-color: #5a189a;
+}
